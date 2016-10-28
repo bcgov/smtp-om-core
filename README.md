@@ -10,6 +10,7 @@ To build this project use
     mvn install (note swagger-ui component must be triggered seperately)
 
 Fuse Pre-requisites:
+
 	Fuse 6.3
 	features:install war
 	features:install camel-jetty
@@ -21,6 +22,7 @@ You can run the following command from its shell:
     osgi:install -s mvn:com.smtp/smtp-om-glvalidation/1.0.0-SNAPSHOT
 
 To deploy swagger UI in OSGi:
+
 	install -s war:file:{build directory}//swagger-ui.war?Web-ContextPath=swagger-ui
 
 
