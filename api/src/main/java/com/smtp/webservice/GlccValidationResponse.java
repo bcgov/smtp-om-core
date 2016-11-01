@@ -13,7 +13,7 @@ public class GlccValidationResponse {
 
 	
 	public GlccValidationResponse(String Ccid) {
-		if (Ccid.equals("010.000.000.000"))
+		if (Ccid.equals("010.000.000.000.000"))
 		{
 			client="010";
 			responsibility="000";

@@ -14,17 +14,23 @@ Fuse Pre-requisites:
 	Fuse 6.3
 	features:install war
 	features:install camel-jetty
+	features:install camel-jackson
+	features:install camel-swagger-java
 	features:install camel-servlet (may not be required)
 	
 To deploy the project in OSGi. For example using Apache Karaf.
 You can run the following command from its shell:
 
-    osgi:install -s mvn:com.smtp/smtp-om-glvalidation/1.0.0-SNAPSHOT
+   osgi:install -s file:{build directory}//smtp-om-glvalidation-1.0.0-SNAPSHOT.jar
+   OR
+   osgi:install -s mvn:com.smtp/smtp-om-glvalidation/1.0.0-SNAPSHOT
 
 To deploy swagger UI in OSGi:
 
 	install -s war:file:{build directory}//swagger-ui.war?Web-ContextPath=swagger-ui
 
+To run Swagger UI
+http://{server}:{port}/swagger-ui/#!/glCodecombinations/get_glCodecombinations_cc
 
 For more help see the Apache Camel documentation
 

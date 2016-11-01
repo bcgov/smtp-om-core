@@ -33,7 +33,7 @@
     <camel.osgi.import.pkg>*</camel.osgi.import.pkg>
     <camel.osgi.export.pkg>*</camel.osgi.export.pkg>
   </properties>
-
+<!--  
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -45,7 +45,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  
+ --> 
   <dependencies>
 
     <!-- swagger api -->
